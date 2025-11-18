@@ -1,6 +1,4 @@
-value = input(" Enter the size of the pattern: ")
-size = int(value)
-print(type(range(size)))
+size = int(input(" Enter the size of the pattern: "))
 rowcount = 0
 while rowcount < size:
     for i in range(size):
