@@ -19,9 +19,12 @@ def main():
         elif choice == '2':
             remove = input("What item do you want to remove? ")
             if remove in shopping_list:
-                shopping_list.pop(remove)
+                index_remove = shopping_list.index(remove)
+                print(index_remove)
+                removed_value = shopping_list.pop(index_remove)
+                print(f"{removed_value} has been removed from the list.")
             else:
-                print("The item you want to remove is not listed")
+                print(f"The item {remove} you want to remove is not listed")
             # Prompt for and remove an item
             # pass
         elif choice == '3':
