@@ -1,4 +1,4 @@
-def perform_operation(num1, num2, string):
+def perform_operation(num1, num2, operation):
     if string in ["add", "subtract", 'multiply', "divide"]:
         if string == 'divide' and num2 == 0:
             return "Can't perfom division by Zero"
